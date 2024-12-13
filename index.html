@@ -9,17 +9,8 @@
   <meta name="description" content="Holistic Hounds of Chester">
   <meta name="author" content="Holistic Hounds of Chester">
 
-  <!-- TODO -->
-  <!-- <meta property="og:title" content="Product Category &#8211; Meats &amp; Game &#8211; Holistic Hounds of Chester">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="QQQ URL QQQ">
-  <meta property="og:description" content="QQQ DESCRIPTION QQQ">
-  <meta property="og:image" content="image.png"> -->
+  <base href="/holistichoundsofchester/" target="_self">
 
-  <!-- TODO -->
-  <!--<link rel="icon" href="/favicon.ico">-->
-  <!--<link rel="icon" href="/favicon.svg" type="image/svg+xml">-->
-  <!--<link rel="apple-touch-icon" href="/apple-touch-icon.png">-->
   <link rel="stylesheet" href="modern-normalize.css">
   <link rel="stylesheet" href="styles.css">
   
@@ -28,27 +19,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <h1>Holistic Hounds of Chester</h1>
     <p class="slogan-text">Natural Dog Treats</p>
     <nav>
       <ul>
-        <li><a href="about">About</a></li>
+        <li><a onclick="history.back()" style="cursor: pointer;" >&lt; Back</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="about/">About</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>Natural Dog Treats</h2>
-    <p>Select from our stock of <strong>high-quality</strong> products and find the perfect item to meet your needs. Our team carefully selects each item to ensure that we offer the <strong>best selection</strong> to your furry friend. With our commitment to quality and <strong>customer satisfaction</strong>, you can shop with confidence knowing that you’re getting top-notch products at competitive prices.</p>
-    <ul>
-      <li><a href="meat-and-game">Natural Treats: Meat &amp; Game</a></li>
-      <li><a href="poultry">Natural Treats: Poultry</a></li>
-      <li><a href="fish">Natural Treats: Fish</a></li>
-      <li><a href="dog-treats">Dog Treats</a></li>
-    </ul>
-  </main>
+  
+<main class="text-only-page-main">
+  <h2>Natural Dog Treats</h2>
+  <p>Select from our stock of <strong>high-quality</strong> products and find the perfect item to meet your needs. Our team carefully selects each item to ensure that we offer the <strong>best selection</strong> to your furry friend. With our commitment to quality and <strong>customer satisfaction</strong>, you can shop with confidence knowing that you’re getting top-notch products at competitive prices.</p>
+  <ul class="product-collection-list">
+    <li><a href="meat-and-game/">Natural Treats: Meat &amp; Game</a></li>
+    <li><a href="poultry/">Natural Treats: Poultry</a></li>
+    <li><a href="fish/">Natural Treats: Fish</a></li>
+    <li><a href="dog-treats/">Dog Treats</a></li>
+  </ul>
+</main>
   <footer>
     © <script>document.write(new Date().getFullYear());</script> Holistic Hounds of Chester. All rights reserved.
   </footer>

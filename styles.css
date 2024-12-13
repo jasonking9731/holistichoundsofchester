@@ -1,9 +1,14 @@
+/* base.liquid Layout */
 body {
   background-color: #F2F1E8;
   font-size: 16px;
 }
+
 nav {
   text-align: center;
+}
+nav > ul {
+  padding-inline-start: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -13,6 +18,7 @@ nav > ul > li > a {
   text-decoration: none;
   color: black;
 }
+
 footer {
   text-align: center;
   padding: 8px;
@@ -23,6 +29,7 @@ h1 {
   font-style: normal;
   font-size: 2.75em;
   text-align: center;
+  margin-bottom: 0;
 }
 h2, body {
   font-family: "Open Sans";
@@ -30,43 +37,50 @@ h2, body {
 }
 h2 { font-size: 2em; }
 
+.slogan-text {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+/* Individual Page <main> sections */
+.text-only-page-main {
+  padding: 2em;
+  line-height: 2em;
+}
+
 .collection-page-main {
   background-color: white;
   padding: 8px;
 }
 
 .product-page-main {
-  main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
     gap: 1rem;
     
     background-color: white;
-    padding: 8px;
+    padding: 1em;
     --min: 30ch;
-  }
 }
 
-.product-page-main > div:nth-child(1) {
-  display: flex;
-  justify-content: center;
-  align-items: start;
+/* Home Page */
+.product-collection-list {
+  font-weight: bold;
+  font-size: 1.23em;
+  padding-inline-start: 1em;
 }
 
-.price { font-size: 2em; }
-.delivery-header:before {
-  content: "🚚";
-}
-.slogan-text {
-  text-align: center;
-}
-
+/* Product Collection Page */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 1rem;
 }
 .gallery a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
   font-family: "Open Sans";
   font-weight: bold;
@@ -77,6 +91,15 @@ figure > img {
   height: 152px;
 }
 
-.slogan-text {
-  text-align: center;
+/* Product Page */
+.product-page-main > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.price { font-size: 2em; }
+
+.delivery-header:before {
+  content: "🚚";
 }
